@@ -2,14 +2,15 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Filme filme = new Filme(); //Instanciando o objeto filme
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        //Atribuindo valores ao objeto Filme, por meio da instância
+        filme.nomeFilme = "As branquelas";
+        filme.anoLancamento = 2012;
+        filme.avaliaFilme(7);
+        filme.avaliaFilme(3);
+        filme.avaliaFilme(4);
+        filme.exibeInformacao();
+        System.out.println(filme.calculaMediaAvaliacao());
     }
 }
