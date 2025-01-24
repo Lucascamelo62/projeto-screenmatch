@@ -1,8 +1,15 @@
+package br.com.alura.screenmatch.modelos;
+
 public class Filme {
-    String nomeFilme;
-    int anoLancamento, totalDeAvaliacao, duracaoMinuto;
+    public String nomeFilme;
+    public int anoLancamento, duracaoMinuto;
+    private int totalDeAvaliacao;
     boolean incluidoPlano;
-    double somaDasAvaliacoes = 0.0;
+    private double somaDasAvaliacoes;
+
+    public int getTotalDeAvaliacao() {
+        return totalDeAvaliacao;
+    }
 
     public void avaliaFilme(double nota) {
         somaDasAvaliacoes += nota;
