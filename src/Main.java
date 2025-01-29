@@ -7,8 +7,8 @@ public class Main {
         Filme filme = new Filme(); //Instanciando o objeto filme
 
         //Atribuindo valores ao objeto br.com.alura.screenmatch.modelos.Filme, por meio da instância
-        filme.nomeFilme = "As branquelas";
-        filme.anoLancamento = 2012;
+        filme.setNomeFilme("As branquelas");
+        filme.setAnoLancamento(2012);
         filme.avaliaFilme(7);
         filme.avaliaFilme(3);
         filme.avaliaFilme(4);
