@@ -1,4 +1,4 @@
-package br.com.alura.screenmatch.atividade5;
+package br.com.alura.screenmatch.atividade1;
 
 public class Livro {
     private String titulo, autor;

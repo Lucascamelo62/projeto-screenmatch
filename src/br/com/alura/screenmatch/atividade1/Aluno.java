@@ -1,4 +1,4 @@
-package br.com.alura.screenmatch.atividade4;
+package br.com.alura.screenmatch.atividade1;
 
 public class Aluno {
     private String nome;
