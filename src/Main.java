@@ -1,4 +1,6 @@
 import br.com.alura.screenmatch.calculadora.CalculadoraDeTempo;
+import br.com.alura.screenmatch.calculadora.FiltroRecomendacao;
+import br.com.alura.screenmatch.modelos.Episodio;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 
@@ -9,6 +11,8 @@ public class Main {
         Filme filme = new Filme(); //Instanciando o objeto filme
         Serie serie = new Serie(); //Instanciando o objeto Serie
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo(); //Instanciando o objeto calculadora
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+        Episodio episodio = new Episodio();
 
         //Atribuindo valores ao objeto br.com.alura.screenmatch.modelos.Filme, por meio da instância
         filme.setNome("As branquelas");
@@ -21,6 +25,8 @@ public class Main {
         System.out.println(filme.getTotalDeAvaliacao());
         System.out.println(filme.calculaMediaAvaliacao());
 
+        episodio.setTotalAvaliacao(200);
+
         serie.setNome("Lost");
         serie.setTemporadas(10);
         serie.setMinutosPorTemporada(50);
@@ -30,5 +36,7 @@ public class Main {
         calculadora.inclui(filme);
         calculadora.inclui(serie);
         System.out.println(calculadora.getTempoTotal());
+        filtro.filtrarRecomendacao(filme);
+        filtro.filtrarRecomendacao(episodio);
     }
 }
