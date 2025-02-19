@@ -6,6 +6,11 @@ public class Titulo {
     private boolean incluidoPlano;
     private double somaDasAvaliacoes;
 
+    public Titulo(String nome, int anoLancamento) {
+        this.nome = nome;
+        this.anoLancamento = anoLancamento;
+    }
+
     public int getTotalDeAvaliacao() {
         return totalDeAvaliacao;
     }
@@ -14,8 +19,16 @@ public class Titulo {
         this.nome = nome;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
     public void setAnoLancamento(int anoLancamento) {
         this.anoLancamento = anoLancamento;
+    }
+
+    public int getAnoLancamento() {
+        return anoLancamento;
     }
 
     public void setDuracaoMinuto(int duracaoMinuto) {
